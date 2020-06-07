@@ -1,0 +1,318 @@
+<!Doctypvhtml>
+<html>
+   <style>
+    
+    *{
+    margin:0;
+padding:0;
+box-sizing: border-box;
+    font-family: 'Playball', cursive;
+        
+    
+}
+
+       header{
+           width: 100%;
+    height: 100vh;
+           background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(image/bg.jpg);
+           background-repeat: no-repeat;
+           background-size: cover;
+       }
+       
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    color: purple;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+nav .logo{
+    width: 20%;
+    text-align: center;
+       
+    
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+        
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+    
+}
+
+nav .menu a:first-child{
+    color: chartreuse
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black ;
+}
+
+section{
+    
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px yellow ;
+    
+}
+
+section h1{
+    margin: 30px 0 20px;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px firebrick   ;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px lemonchiffon ;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btnone{
+   background: moccasin ;
+    color: coral ;
+       
+}
+
+.btnone:hover{
+    background:  chartreuse;
+    color: aqua;
+}
+
+section .btntwo{
+    background: darkred ;
+    color: aqua;
+}
+
+.btntwo:hover{
+    background:lightcoral ;
+    color: orangered;
+}
+
+.change-content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: khaki;
+}
+
+
+@keyframes changetext{
+    0%{content: "Darjeeling";}
+    20%{content: "Agra";}
+    35%{content: "Japiur";}
+    45%{content: "Rajasthan";}
+    60%{content: "Kerala";}
+    80%{content: "Delhi"}
+    100%{content: "Mumbai";}
+  
+}
+h2{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    letter-spacing: 1.1rem;
+    text-align: center;
+    color:darkred ;
+    margin-top: 100px;
+}
+img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%
+}
+.cycle-slideshow{
+    width: 100%;
+    max-width: 950px;
+    height: 400px;
+    display:block;
+    position: relative;
+    margin: 30px auto;
+   box-shadow: 1px 2px 10px 5px sienna ;
+    
+    animation: slider 9s infinite linear;
+    background-color:rgba(27,31,34,0.85);
+}
+@keyframes slider{
+    0%{ <img src="image/01.jfif">}
+    35%{<img src="image/02.jfif">}
+    75%{<img src="image/india.jpeg">}
+    80%{<img src="image/resize.jfif">}
+    100%{<img src="image/bumbai.jpg">}
+    
+}
+body{
+     background-image:url('../image/003.jpg');
+    
+    background-size: contain;
+    
+}
+
+
+.box{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 110%);
+    height: 35px
+    width: 300px;
+    padding: 120px;
+    background: rgba(0,0,0,0.7);
+    box-sizing: border-box;
+    box-shadow: 10px 15px 30px rgba(0,0,0,0.6);
+    border-radius: 50px;
+}
+
+.box h2{
+    color: lightpink;
+    margin:0 0 100px;
+    padding:0;
+    text-align: center;
+    
+}
+.box .inputBox{
+    position:relative;
+
+}
+
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: hotpink ;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid lightskyblue;
+    outline: none;
+    background: transparent;
+}
+
+
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: bisque;
+    pointer-events: none;
+    transition: 1.4s;
+}
+
+.box .inoutBox input:focus-label,
+.box .inoutBox input:valid-label{
+    top: -18;
+    left: 0;
+    font-size: 12px;
+
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: firebrick;
+    background: gold;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.colorchange{
+    animation: colorchangethapa 3s infinite;
+    
+}
+
+@keyframes colorchangethapa{
+    5%{color: sienna;}
+    25%{color: maroon;}
+    50%{color: salmon;}
+    100%{color: purple;}
+       
+       }
+    
+    
+    
+    
+    </style>
+    
+<head>
+   <title></title> 
+   
+   
+   <link href="https://fonts.googleapis.com/css2?family=Playball&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+</head>
+
+
+    
+
+<body>
+    
+    
+    <header>
+        
+        <nav>
+            <div class="logo"> <h1 class="animated infinite zoomInDown"><span class="colorchange">Mera bharat</span></h1></div>
+            <div class="menu">
+               
+                <a href="#">Home</a>
+                 <a href="#">About</a>
+                  <a href="pictures.html" target="_blank">Picture</a>
+                <a href="login.html" target="_blank"><span class="colorchange">Login</span></a>
+                   
+            </div>
+            </nav>
+            <main>
+                
+                <section>
+                    
+                    <h3>Welcome To India</h3>
+                    <h1>Do Come <span class="colorchange">& visit</span><span class="change-content"></span></h1>
+                    <p>India once is not enough</p>
+                    <a href="#" class="btnone">Learn more</a>
+                    <a href="#" class="btntwo">Subscribe</a>
+                </section>
+            </main>
+        
+        
+        
+    </header>
+</body>
+</html>
